@@ -104,3 +104,33 @@ backend/*.swp
 backend/*.swo
 backend/.DS_Store
 backend/Thumbs.db
+
+
+# OS/editor
+.DS_Store
+*.swp
+
+# Env files
+gam/src/environments/environment.ts
+gam/src/environments/environment.prod.ts
+.env
+
+# Angular / Node
+gam/node_modules/
+gam/.angular/
+gam/dist/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+
+# Extracted/generated data (contains financial PII)
+backend/extracted_tables/
+
+# Demo/sample files
+**/demo pdf.pdf
+demo pdf.docx
+
