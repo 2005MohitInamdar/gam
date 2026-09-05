@@ -136,3 +136,11 @@ demo pdf.docx
 
 backend/extracted_tables/
 
+# remove python cache files
+backend/__pycache__
+backend/services/__pycache__
+backend/services/caseLeadData/__pycache__
+backend/services/fileupload/__pycache__
+backend/services/pdf_extraction/demo_pdf.pdf
+backend/supaInit/__pycache__
+
