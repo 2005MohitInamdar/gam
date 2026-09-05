@@ -1,0 +1,25 @@
+{
+  "table": "amount_summary",
+  "columns": [
+    "S No.",
+    "",
+    "Amount"
+  ],
+  "rows": [
+    {
+      "S No.": "1",
+      "": "Transaction put on hold",
+      "Amount": "Rs. 38,983.54"
+    },
+    {
+      "S No.": "2",
+      "": "Other",
+      "Amount": "Rs. 0.10"
+    },
+    {
+      "S No.": "3",
+      "": "Others [ <=500]",
+      "Amount": "Rs. 3,248.76"
+    }
+  ]
+}

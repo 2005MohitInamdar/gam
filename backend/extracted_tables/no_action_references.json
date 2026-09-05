@@ -1,0 +1,59 @@
+{
+  "table": "no_action_references",
+  "columns": [
+    "S No.",
+    "Reference No / Remarks",
+    "Action Taken By",
+    "Date of Action"
+  ],
+  "rows": [
+    {
+      "S No.": "1",
+      "Reference No / Remarks": "",
+      "Action Taken By": "State Bank of India",
+      "Date of Action": "12/08/2026 00:05:01"
+    },
+    {
+      "S No.": "2",
+      "Reference No / Remarks": "",
+      "Action Taken By": "HDFC Bank",
+      "Date of Action": "12/08/2026 00:15:01"
+    },
+    {
+      "S No.": "3",
+      "Reference No / Remarks": "",
+      "Action Taken By": "Punjab National Bank",
+      "Date of Action": "12/08/2026 11:01:52"
+    },
+    {
+      "S No.": "4",
+      "Reference No / Remarks": "",
+      "Action Taken By": "Fino Payments Bank",
+      "Date of Action": "12/08/2026 11:30:01"
+    },
+    {
+      "S No.": "5",
+      "Reference No / Remarks": "",
+      "Action Taken By": "Airtel Payments Bank",
+      "Date of Action": "12/08/2026 11:40:01"
+    },
+    {
+      "S No.": "6",
+      "Reference No / Remarks": "",
+      "Action Taken By": "Punjab National Bank",
+      "Date of Action": "12/08/2026 17:13:28"
+    },
+    {
+      "S No.": "7",
+      "Reference No / Remarks": "",
+      "Action Taken By": "Paytm",
+      "Date of Action": "12/08/2026 22:17:16"
+    },
+    {
+      "S No.": "8",
+      "Reference No / Remarks": "",
+      "Action Taken By": "India Post Payments Bank",
+      "Date of Action": "12/08/2026 22:17:16"
+    }
+  ]
+}

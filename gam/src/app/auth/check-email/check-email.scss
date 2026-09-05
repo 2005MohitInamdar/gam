@@ -1,0 +1,14 @@
+// Only used for the subtle pulse animation on the icon background —
+// not cleanly doable with Tailwind's default utility classes alone.
+.check-email-icon {
+  animation: pulse-ring 2s ease-in-out infinite;
+}
+
+@keyframes pulse-ring {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(79, 70, 229, 0);
+  }
+}

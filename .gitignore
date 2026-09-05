@@ -1,0 +1,106 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# ─── Secrets / Environment ─────────────────────────────────────────────────────
+# Contains Supabase URL and keys — never commit real values
+gam/src/app/environment.ts
+
+
+# Compiled output
+gam/dist
+gam/tmp
+gam/out-tsc
+gam/bazel-out
+
+# Node
+gam/node_modules
+gamnpm-debug.log
+gamyarn-error.log
+
+# IDEs and editors
+gam/.idea/
+gam/.project
+gam/.classpath
+gam/.c9/
+gam/*.launch
+gam/.settings/
+gam/*.sublime-workspace
+
+# Visual Studio Code
+gam/.vscode/*
+gam/!.vscode/settings.json
+gam/!.vscode/tasks.json
+gam/!.vscode/launch.json
+gam/!.vscode/extensions.json
+gam/!.vscode/mcp.json
+gam/.history/*
+
+# Miscellaneous
+gam/.angular/cache
+gam/.sass-cache/
+gam/connect.lock
+gam/coverage
+gam/libpeerconnection.log
+gam/testem.log
+gam/typings
+gam/__screenshots__/
+
+# System files
+gam/.DS_Store
+gam/Thumbs.db
+
+
+# Byte-compiled / optimized / DLL files
+backend/__pycache__/
+backend/*.py[cod]
+backend/*$py.class
+
+# C extensions
+backend/*.so
+
+# Distribution / packaging
+backend/build/
+backend/develop-eggs/
+backend/dist/
+backend/downloads/
+backend/eggs/
+backend/.eggs/
+backend/lib/
+backend/lib64/
+backend/parts/
+backend/sdist/
+backend/var/
+backend/wheels/
+backend/share/python-wheels/
+backend/*.egg-info/
+backend/.installed.cfg
+backend/*.egg
+backend/MANIFEST
+
+# Virtual Environments
+backend/venv/
+backend/env/
+backend/ENV/
+backend/.venv/
+
+# Environment Variables & Secrets (for python-dotenv)
+backend/.env
+backend/.env.local
+backend/.env.*.local
+
+# Supabase Local Development (if using Supabase CLI)
+backend/.supabase/
+
+# Testing, Linter & Type Checking Caches
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/.ruff_cache/
+backend/htmlcov/
+backend/.coverage
+
+# IDEs, Editors & OS Metadata
+backend/.vscode/
+backend/.idea/
+backend/*.swp
+backend/*.swo
+backend/.DS_Store
+backend/Thumbs.db

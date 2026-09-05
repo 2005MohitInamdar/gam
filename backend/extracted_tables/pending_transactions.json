@@ -1,0 +1,19 @@
+{
+  "table": "pending_transactions",
+  "columns": [
+    "S No.",
+    "Bank",
+    "No. of Transaction Pending",
+    "Amount Pending",
+    "Pending From"
+  ],
+  "rows": [
+    {
+      "S No.": "1",
+      "Bank": "NSDL Payments Bank Ltd",
+      "No. of Transaction Pending": "",
+      "Amount Pending": "2,000.00",
+      "Pending From": "12/08/2026 11:40:01"
+    }
+  ]
+}

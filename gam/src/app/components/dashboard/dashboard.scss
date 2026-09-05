@@ -1,0 +1,222 @@
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 64px;
+  background: #0f172a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
+}
+
+.navbar-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #f1f5f9;
+  text-transform: uppercase;
+}
+
+.signout-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1.1rem;
+  background: transparent;
+  color: #94a3b8;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(239, 68, 68, 0.1);
+    color: #f87171;
+    border-color: rgba(239, 68, 68, 0.4);
+  }
+}
+
+/* ===== Main Content ===== */
+.dashboard-main {
+  min-height: calc(100vh - 64px);
+  background: #0d1424;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ===== New Case Card ===== */
+.new-case-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, #1e293b 0%, #162032 100%);
+  border: 1px solid rgba(99, 179, 237, 0.2);
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  max-width: 520px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    border-color: rgba(99, 179, 237, 0.55);
+    background: linear-gradient(135deg, #243147 0%, #1a2a42 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(56, 145, 243, 0.15);
+
+    .card-icon {
+      color: #60a5fa;
+    }
+
+    .card-arrow {
+      transform: translateX(4px);
+      color: #60a5fa;
+    }
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.card-icon {
+  flex-shrink: 0;
+  color: #3b82f6;
+  transition: color 0.2s ease;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin: 0 0 0.3rem;
+  letter-spacing: 0.01em;
+}
+
+.card-subtitle {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.card-arrow {
+  flex-shrink: 0;
+  color: #475569;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* ===== Stats Section ===== */
+.stats-section {
+  margin-top: 2.5rem;
+  width: 100%;
+}
+
+.stats-heading {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #475569;
+  margin: 0 0 1rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.4rem;
+  background: #1e293b;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.stat-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-number {
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #f1f5f9;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* ---- Card Variants ---- */
+.stat-total .stat-icon {
+  background: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+}
+.stat-total .stat-number { color: #818cf8; }
+
+.stat-missing .stat-icon {
+  background: rgba(251, 191, 36, 0.12);
+  color: #fbbf24;
+}
+.stat-missing .stat-number { color: #fbbf24; }
+
+.stat-completed .stat-icon {
+  background: rgba(52, 211, 153, 0.12);
+  color: #34d399;
+}
+.stat-completed .stat-number { color: #34d399; }
+
+.stat-incomplete .stat-icon {
+  background: rgba(248, 113, 113, 0.12);
+  color: #f87171;
+}
+.stat-incomplete .stat-number { color: #f87171; }
+

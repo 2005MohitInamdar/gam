@@ -1,0 +1,122 @@
+{
+  "table": "hold_accounts",
+  "columns": [
+    "S No.",
+    "Account No.",
+    "Put on hold Date",
+    "Put on hold Amount",
+    "Reference No / Remarks",
+    "Action Taken By",
+    "Date of Action"
+  ],
+  "rows": [
+    {
+      "S No.": "1",
+      "Account No.": "876005973",
+      "Put on hold Date": "11/08/2026",
+      "Put on hold Amount": "500.00",
+      "Reference No / Remarks": "",
+      "Action Taken By": "India Post Payments Bank",
+      "Date of Action": "11/08/2026 13:30:19"
+    },
+    {
+      "S No.": "2",
+      "Account No.": "3768795609",
+      "Put on hold Date": "11/08/2026",
+      "Put on hold Amount": "8,980.65",
+      "Reference No / Remarks": "Hold(s) Exist due to statutory dues, etc.",
+      "Action Taken By": "State Bank of India",
+      "Date of Action": "12/08/2026 00:05:01"
+    },
+    {
+      "S No.": "3",
+      "Account No.": "38501960",
+      "Put on hold Date": "11/08/2026",
+      "Put on hold Amount": "119.20",
+      "Reference No / Remarks": "Lien Marked :119.2, Amount on Hold : 119.2",
+      "Action Taken By": "Kotak Mahindra Bank",
+      "Date of Action": "12/08/2026 00:08:22"
+    },
+    {
+      "S No.": "4",
+      "Account No.": "5050984506",
+      "Put on hold Date": "11/08/2026",
+      "Put on hold Amount": "2,818.31",
+      "Reference No / Remarks": "Put on Hold",
+      "Action Taken By": "HDFC Bank",
+      "Date of Action": "12/08/2026 00:15:01"
+    },
+    {
+      "S No.": "5",
+      "Account No.": "9501278861",
+      "Put on hold Date": "12/08/2026",
+      "Put on hold Amount": "18,049.84",
+      "Reference No / Remarks": "Lien marked for the Disputed amount",
+      "Action Taken By": "Axis Bank",
+      "Date of Action": "12/08/2026 00:20:24"
+    },
+    {
+      "S No.": "6",
+      "Account No.": "9803904559",
+      "Put on hold Date": "29/06/2026",
+      "Put on hold Amount": "2.98",
+      "Reference No / Remarks": "Lien Marked:2.98, Amount on Hold : 2.98",
+      "Action Taken By": "Kotak Mahindra Bank",
+      "Date of Action": "12/08/2026 10:42:31"
+    },
+    {
+      "S No.": "7",
+      "Account No.": "87478916",
+      "Put on hold Date": "07/08/2026",
+      "Put on hold Amount": "2,356.80",
+      "Reference No / Remarks": "Lien Marked:2356.8, Amount on Hold : 2356.8",
+      "Action Taken By": "Kotak Mahindra Bank",
+      "Date of Action": "12/08/2026 10:46:37"
+    },
+    {
+      "S No.": "8",
+      "Account No.": "87478916",
+      "Put on hold Date": "25/07/2026",
+      "Put on hold Amount": "2,353.82",
+      "Reference No / Remarks": "Lien Marked:2353.82, Amount on Hold : 2353.82",
+      "Action Taken By": "Kotak Mahindra Bank",
+      "Date of Action": "12/08/2026 10:46:37"
+    },
+    {
+      "S No.": "9",
+      "Account No.": "9750427169",
+      "Put on hold Date": "12/08/2026",
+      "Put on hold Amount": "637.32",
+      "Reference No / Remarks": "NCRP: Lien marked on account",
+      "Action Taken By": "Punjab National Bank",
+      "Date of Action": "12/08/2026 11:35:01"
+    },
+    {
+      "S No.": "10",
+      "Account No.": "83671091014",
+      "Put on hold Date": "12/08/2026",
+      "Put on hold Amount": "21.42",
+      "Reference No / Remarks": "LIEN MARKED WITH LIEN ID BI3415073",
+      "Action Taken By": "Bank of India",
+      "Date of Action": "12/08/2026 12:05:01"
+    },
+    {
+      "S No.": "11",
+      "Account No.": "94750013245 2",
+      "Put on hold Date": "12/08/2026",
+      "Put on hold Amount": "500.00",
+      "Reference No / Remarks": "LIEN MARKED WITH LIEN ID BI342037",
+      "Action Taken By": "Bank of India",
+      "Date of Action": "12/08/2026 14:35:01"
+    },
+    {
+      "S No.": "12",
+      "Account No.": "5830017208",
+      "Put on hold Date": "13/08/2026",
+      "Put on hold Amount": "2,643.20",
+      "Reference No / Remarks": "946922004 Lien has been placed due to a Disputed transaction",
+      "Action Taken By": "AIRPAY",
+      "Date of Action": "13/08/2026 20:28:34"
+    }
+  ]
+}

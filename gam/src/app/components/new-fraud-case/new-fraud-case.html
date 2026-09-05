@@ -1,0 +1,167 @@
+<!-- Modal Overlay -->
+<div class="modal-overlay" *ngIf="isOpen" (click)="onOverlayClick($event)">
+  <div class="modal-panel">
+
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <div class="modal-title-group">
+        <div class="modal-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <polyline points="10 9 9 9 8 9" />
+          </svg>
+        </div>
+        <div>
+          <h2 class="modal-title">New Fraud Case</h2>
+          <p class="modal-subtitle">Fill in the lead officer's details and attach the case file</p>
+        </div>
+      </div>
+      <button class="close-btn" (click)="close()" aria-label="Close modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Section: Lead Officer -->
+    <div class="modal-section">
+      <div class="section-label">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        Lead Police Officer
+      </div>
+
+      <div class="form-grid">
+        <!-- Inspector Name -->
+        <div class="form-group">
+          <label class="form-label" for="inspectorName">Full Name</label>
+          <input
+            id="inspectorName"
+            class="form-input"
+            type="text"
+            placeholder="e.g. Inspector Ramesh Kumar"
+            [(ngModel)]="inspectorName"
+          />
+        </div>
+
+        <!-- Rank / Title -->
+        <div class="form-group">
+          <label class="form-label" for="inspectorRank">Rank / Title</label>
+          <input
+            id="inspectorRank"
+            class="form-input"
+            type="text"
+            placeholder="e.g. Inspector, Sub-Inspector"
+            [(ngModel)]="inspectorRank"
+          />
+        </div>
+
+        <!-- Branch / Station -->
+        <div class="form-group form-group--full">
+          <label class="form-label" for="inspectorBranch">Branch / Police Station</label>
+          <input
+            id="inspectorBranch"
+            class="form-input"
+            type="text"
+            placeholder="e.g. CBI Branch, Mumbai Central"
+            [(ngModel)]="inspectorBranch"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="modal-divider"></div>
+
+    <!-- Section: File Upload -->
+    <div class="modal-section">
+      <div class="section-label">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="17 8 12 3 7 8" />
+          <line x1="12" y1="3" x2="12" y2="15" />
+        </svg>
+        Case File Upload
+      </div>
+
+      <!-- Drop Zone -->
+      <div
+        class="drop-zone"
+        [class.drop-zone--active]="isDragging"
+        [class.drop-zone--filled]="selectedFile"
+        (dragover)="onDragOver($event)"
+        (dragleave)="onDragLeave()"
+        (drop)="onDrop($event)"
+        *ngIf="!selectedFile"
+      >
+        <div class="drop-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="17 8 12 3 7 8" />
+            <line x1="12" y1="3" x2="12" y2="15" />
+          </svg>
+        </div>
+        <p class="drop-title">Drag & drop your file here</p>
+        <p class="drop-hint">Supports <strong>PDF</strong> and <strong>Excel (.xls, .xlsx)</strong> only</p>
+        <label for="fileInput" class="upload-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="17 8 12 3 7 8" />
+            <line x1="12" y1="3" x2="12" y2="15" />
+          </svg>
+          Browse File
+        </label>
+        <input
+          id="fileInput"
+          type="file"
+          accept=".pdf,.xls,.xlsx,application/pdf,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+          class="file-input-hidden"
+          (change)="onFileSelected($event)"
+        />
+      </div>
+
+      <!-- File Preview -->
+      <div class="file-preview" *ngIf="selectedFile">
+        <span class="file-preview-icon">{{ getFileIcon() }}</span>
+        <div class="file-preview-info">
+          <span class="file-preview-name">{{ selectedFile.name }}</span>
+          <span class="file-preview-size">{{ formatFileSize(selectedFile.size) }}</span>
+        </div>
+        <button class="file-remove-btn" (click)="removeFile()" aria-label="Remove file">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal Footer -->
+    <div class="modal-footer">
+      <button class="btn-cancel" (click)="close()" [disabled]="isProcessing">Cancel</button>
+      <button class="btn-submit" (click)="createCase()" [disabled]="isProcessing || !selectedFile">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L2 7l10 5 10-5-10-5z" />
+          <path d="M2 17l10 5 10-5" />
+          <path d="M2 12l10 5 10-5" />
+        </svg>
+        {{ isProcessing ? 'Processing…' : 'Create Case' }}
+      </button>
+    </div>
+
+  </div>
+</div>
